@@ -1,7 +1,7 @@
-LOCAL_PATH := device/moto/panelli
+LOCAL_PATH := device/infocus/philip
 
 # Platform
-TARGET_BOARD_PLATFORM := mt6737m
+TARGET_BOARD_PLATFORM := mt6737h
 TARGET_NO_BOOTLOADER := true
 
 # Architecture
@@ -12,7 +12,7 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := cortex-a53
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := mt6737m
+TARGET_BOOTLOADER_BOARD_NAME := mt6737h
 
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -20,7 +20,7 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-TARGET_PREBUILT_KERNEL := device/moto/panelli/zImage-dtb
+TARGET_PREBUILT_KERNEL := device/infocus/philip/zImage-dtb
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x04000000
@@ -42,7 +42,7 @@ TARGET_KMODULES := true
 
 # Assert
 #rip ported recoveries
-TARGET_OTA_ASSERT_DEVICE := Moto,"panelli",panelli,Moto_C,Moto C,C,Moto C Plus,Moto_C_plus,namath
+TARGET_OTA_ASSERT_DEVICE := Infocus,"philip",philip,if9031,Vision 3,Vision,IF9031,InFocus
 
 # MTK Hardware
 BOARD_HAS_MTK_HARDWARE := true
@@ -56,7 +56,7 @@ RECOVERY_VARIANT := twrp
 TW_THEME := portrait_hdpi
 TW_EXCLUDE_SUPERSU := true
 TW_INCLUDE_INJECTTWRP := false
-TW_DEVICE_VERSION := TWRP-8.1--Panelli by DhirajMS
+TW_DEVICE_VERSION := TWRP-8.1
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_INCLUDE_FB2PNG := true
 TW_HAS_DOWNLOAD_MODE := false
@@ -69,6 +69,6 @@ TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_MAX_BRIGHTNESS := 255
 #TW_USE_TOOLBOX := true
 
-PRODUCT_COPY_FILES += device/moto/panelli/twrp.fstab:recovery/root/etc/twrp.fstab
-PRODUCT_COPY_FILES += device/moto/panelli/recovery.fstab:recovery/root/etc/recovery.fstab
-PRODUCT_COPY_FILES += device/moto/panelli/fstab.mt6735:recovery/root/etc/fstab.mt6735
+PRODUCT_COPY_FILES += device/infocus/philip/twrp.fstab:recovery/root/etc/twrp.fstab
+PRODUCT_COPY_FILES += device/infocus/philip/recovery.fstab:recovery/root/etc/recovery.fstab
+PRODUCT_COPY_FILES += device/infocus/philip/fstab.mt6735:recovery/root/etc/fstab.mt6735
