@@ -1,6 +1,6 @@
-## TWRP for Moto C Plus
+## TWRP for InFocus Vision 3 (philip)
 
-Minimal device tree for building TWRP for panelli
+Minimal device tree for building TWRP for philip
 
 ## procedure
 
@@ -8,10 +8,10 @@ Minimal device tree for building TWRP for panelli
 
 (2) repo sync -j16
 
-(3) git clone https://github.com/DhirajSurvase/twrp_device_moto_panelli device/moto/panelli
+(3) git clone https://github.com/00p513-dev/twrp_device_infocus_philip device/infocus/philip
 
 (4) . build/envsetup.sh
 
-(5) lunch omni_panelli-eng
+(5) lunch omni_philip-eng
 
-(6) make recoveryimage -j64
+(6) make recoveryimage -j8
